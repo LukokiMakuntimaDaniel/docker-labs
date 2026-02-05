@@ -1,35 +1,34 @@
 # docker-labs
 Practical Docker projects and experiments, from fundamentals to advanced containerization concepts
 
-# Docker Labs 🐳
+## Docker Labs 🐳
 
-Este repositório documenta a minha jornada de aprendizagem em Docker,
-com foco em prática, experimentação e projetos reais.
+This repository documents my learning journey with Docker,
+focusing on hands-on practice, experimentation, and real-world projects.
 
-Aqui vou concentrar todos os avanços feitos ao longo dos estudos,
-desde conceitos fundamentais até cenários mais avançados
-utilizados em ambientes reais.
+It brings together all my progress while studying Docker, from fundamental
+concepts to more advanced containerization scenarios used in real environments.
 
-## 🎯 Objetivo
-- Aprender Docker do básico ao avançado
-- Criar projetos práticos e funcionais
-- Compreender boas práticas de containerização
-- Construir um portfólio técnico público
+## 🎯 Purpose
+- Learn Docker from beginner to advanced level
+- Build practical and functional projects
+- Understand containerization best practices
+- Create a public technical portfolio
 
-## 🧱 Organização
-Cada pasta representa uma etapa da aprendizagem ou um projeto específico.
-Dentro de cada projeto estarão os Dockerfiles, configurações e
-documentação necessária para execução.
+## 🧱 Structure
+Each folder represents a learning stage or a specific project.
+Inside each project, you will find Dockerfiles, configuration files,
+and documentation required to run and understand the setup.
 
-## 🛠️ Tecnologias
+## 🛠️ Technologies
 - Docker
 - Docker Compose
-- Containers Linux
+- Linux Containers
 
-*(Outras tecnologias serão adicionadas conforme os projetos evoluem)*
+*(Additional technologies will be added as the projects evolve)*
 
 ## 📌 Status
-🚧 Repositório em constante evolução
+🚧 Work in progress — continuously evolving
 
 ## 👤 Autor
 **Lukoki Daniel**  

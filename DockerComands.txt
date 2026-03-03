@@ -1,0 +1,25 @@
+docker container run -t ubuntu top
+
+Cria um container baseado no Ubuntu e executa o monitor de processos (top) dentro dele.
+
+docker container run --detach --publish 8080:80 --name nginx nginx
+
+Cria e executa um servidor web Nginx em segundo plano(--detach), acessível na porta 8080 do teu computador.
+
+sudo docker stop $(sudo docker ps -q)
+
+Para todos os containers que estão atualmente em execução.
+
+sudo docker ps -a
+
+Mostra todos os containers que existem na máquina, independentemente de estarem ativos ou não.
+
+docker container run --detach --publish 8081:27017 --name mongo mongo:3.4
+
+Cria e executa um servidor MongoDB em segundo plano, acessível através da porta 8081 da máquina local.
+
+
+
+
+
+

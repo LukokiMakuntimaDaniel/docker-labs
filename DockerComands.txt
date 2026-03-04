@@ -18,6 +18,47 @@ docker container run --detach --publish 8081:27017 --name mongo mongo:3.4
 
 Cria e executa um servidor MongoDB em segundo plano, acessível através da porta 8081 da máquina local.
 
+https://hub.docker.com/  repositório de imagens docker
+
+docker container ls → Lista todos os containers em execução no momento.
+docker container stop [container id] → Para (desliga) um container que está em execução.
+docker container start [container id] → Inicia um container que está parado.
+docker system prune → Remove recursos não utilizados (containers parados, redes não usadas, imagens órfãs e cache), liberando espaço no sistema
+
+touch Dockerfile
+Cria o ficheiro onde vamos escrever as instruções para construir uma imagem Docker personalizada.
+
+FROM python:3.6.1-alpine
+RUN pip install --upgrade pip
+RUN pip install flask
+CMD ["python","app.py"]
+COPY app.py /app.py
+
+Cria uma imagem Docker capaz de executar uma aplicação Flask escrita em Python.
+
+docker image build -t python-newprogram .
+
+cria uma nova imagem Docker a partir de um Dockerfile, e a opção -t permite definir um nome para essa imagem.
+
+O ponto (.) no final do comando docker build indica que o diretório atual será utilizado como contexto de construção, permitindo ao Docker acessar o Dockerfile e os demais ficheiros necessários para criar a imagem.
+
+docker run -p 5001:5000 -d python-newprogram
+
+Executa uma aplicação dentro de um container e torna-a acessível na porta 5001 da máquina local.
+
+docker image ls
+
+Mostra as imagens que já foram baixadas ou criadas no teu sistema.
+
+docker image rm [id do image]
+
+emove uma imagem Docker do sistema local, desde que ela não esteja em uso por containers ativos.
+
+docker container logs [container id] 
+
+O comando docker container logs é utilizado para visualizar os registos (logs) de saída de um container específico.
+
+
 
 
 
